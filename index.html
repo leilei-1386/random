@@ -4,27 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body { font-family: sans-serif;}
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1 id="Strategy">Hello</h1>
+    <div id="Card">
+        <h1 id="Strategy">Hello</h1>
+    </div>
+    <button onclick="window.location.reload();">⌘R</button>
 
     <script>
         var strategy = document.getElementById("Strategy") ;
-        strategy.innerHTML = "WHAT THE SIGMA?"
 
         const Strategies = [
-            "Panda roux",
-            "Palla cat",
-            "furret"
+        "Sleep is a solution",
+        "Is it finished?",
+        "Do something stupid and smart",
+        "Turn it upside down",
+        "Would anybody want it?",
+        "Use an old idea"
         ];
 
-        let liste = Strategies.length;
+        let total = Strategies.length;
         let rando = Math.random();
-        let hasar = rando * liste;
+        let hasar = rando * total;
         let choix = Math.floor( hasar );
 
         strategy.innerHTML = Strategies[ choix] 
@@ -32,10 +35,6 @@
         //if( Math.random() > 0.5 ){
         // strategy.innerHTML = "Obey."
         //}
-
-        if ( Math.random() > 0.5 ){
-            strategy.innerHTML = "Obey." ;
-        }
 
     </script>
 </body>
