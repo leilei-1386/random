@@ -1,7 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Workbench&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Quintessential&family=Space+Grotesk:wght@300..700&family=Workbench&display=swap');
+
+
 
 body {
-    font-family: "Public Sans", sans-serif;
+    font-family: "Quintessential", serif;
+    color: rgb(123, 54, 54);
     background-color: #f59090;
 
     min-height: 100vh;
@@ -19,7 +23,7 @@ body {
 
     background-color: rgb(155, 203, 245);
     border: 2px solid rgb(195, 232, 255);
-    box-shadow: 0.5rem 0.5rem 0.4rem rgb(106, 154, 174);
+    box-shadow: 0.5rem 0.5rem 0.4rem rgb(137, 60, 60);
 }
 
 #Strategy {
@@ -34,10 +38,9 @@ button {
     border-radius: 0.4rem;
     padding: 0.5rem;
 
-    
     background-color: rgb(155, 203, 245);
     border: 2px solid rgb(195, 232, 255);
-    box-shadow: 0.5rem 0.5rem 0.4rem rgb(106, 154, 174);
+    box-shadow: 0.5rem 0.5rem 0.4rem rgb(137, 60, 60);
     margin-top: 1.5rem;
     opacity: 0.7;
 }
