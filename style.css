@@ -2,7 +2,7 @@
 
 body {
     font-family: "Public Sans", sans-serif;
-    background-color: #939393;
+    background-color: #f59090;
 
     min-height: 100vh;
     display: flex;
@@ -12,14 +12,14 @@ body {
 }
 
 #Card {
-    width : 20rem;
-    aspect-ratio : 1.4;
-    border-radius: 0.6rem;
+    width: 20rem;
+    aspect-ratio: 2.5;
+    border-radius: 0.5rem;
     padding: 1rem;
 
-    background-color: rgb(227, 227, 227);
-    border: 2px solid rgba(0, 0, 0, 0.267);
-    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+    background-color: rgb(155, 203, 245);
+    border: 2px solid rgb(195, 232, 255);
+    box-shadow: 0.5rem 0.5rem 0.4rem rgb(106, 154, 174);
 }
 
 #Strategy {
@@ -30,10 +30,18 @@ body {
 }
 
 button {
-    margin-top: 2rem;
-    padding: 0.5em 1em;
-    opacity: 0.2;
+
+    border-radius: 0.4rem;
+    padding: 0.5rem;
+
+    
+    background-color: rgb(155, 203, 245);
+    border: 2px solid rgb(195, 232, 255);
+    box-shadow: 0.5rem 0.5rem 0.4rem rgb(106, 154, 174);
+    margin-top: 1.5rem;
+    opacity: 0.7;
 }
+
 button:hover {
     opacity: 1;
 }
