@@ -72,6 +72,20 @@
       }
     </style>
 
+        <img id="Photosbob">
+
+    <style>
+      #Photobob{
+        position:static;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+
     <button onclick="window.location.reload();">R</button>
 
     <script>
@@ -113,6 +127,18 @@ let imagesRando = Math.random();
 let imagesHasar = imagesRando * imagesTotal
 let imagesChoix = Math.floor( imagesHasar );
 theImage.src = mesImages[imagesChoix]
+
+//let mesPhotosbob = [ 
+  "chat",
+  "chaton"
+//];
+//let thePhotosbob = document.getElementById("Photosbob")
+//let bobTotal = mesPhotosbob.length;
+//let bobRando = Math.random();
+//let bobHasar = bobRando * bobTotal
+//let bobChoix = Math.floor( bobHasar );
+//thePhotosbob.src = mesPhotosbob[bobChoix]
+
 
     </script>
 
