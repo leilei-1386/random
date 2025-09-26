@@ -87,29 +87,23 @@
 
     </script>
 
-    <div id="AlbumCard">
-        <h1 id="AlbumImage" src=""images/Users/leilaherrmann/Downloads/MOUTHWASHING.jpg alt="Random photo">
-    </div>
+<div id="AlbumCard">
+  <h1>Album</h1>
+  <img id="AlbumImage" src="images/pic1.jpg" alt="Random photo" width="250">
+</div>
 
-  
-    <script>
-        var albumImage = document.getElementById("AlbumImage") ;
+<script>
+  var albumImage = document.getElementById("AlbumImage");
 
-        const AlbumPhotos = [
-        "images/Users/leilaherrmann/Downloads/MOUTHWASHING.jpg",
-        "IMAGES/Users/leilaherrmann/Downloads/starry sky.jpg"
-        ];
+  const AlbumPhotos = [
+    "images/pic1.jpg",
+    "images/pic2.jpg",
+    "images/pic3.jpg"
+  ];
 
-        let totalPhotos = AlbumPhotos.length;
-        let choixPhotos = Math.floor( hasar );
-
-        strategy.innerHTML = Strategies[ choix] 
-
-        //if( Math.random() > 0.5 ){
-        // strategy.innerHTML = "Obey."
-        //}
-
-    </script>
+  let choixPhoto = Math.floor(Math.random() * AlbumPhotos.length);
+  albumImage.src = AlbumPhotos[choixPhoto];
+</script>
 
 </body>
 </html>
