@@ -41,8 +41,12 @@ h2 {
     line-height: 1.2;
 }
 
-button {
 
+
+
+button {
+    font-family: "Quintessential", serif;
+    color: rgb(123, 54, 54);
     border-radius: 0.4rem;
     padding: 0.5rem;
 
