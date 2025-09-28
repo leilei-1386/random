@@ -15,8 +15,28 @@
 
   <input type="text" id="searchInput" placeholder="search…" autofocus>
 
+
+  <div class="Card">
+    <h1 id="Strategy">Hello</h1>
+  </div>
+
+  <div class="gallerie">
+  <div class="Card">
+    <img id="ID450">
+  </div>
+
+  <div class="Card">
+    <img id="BOB">
+  </div>
+    </div>
+
+  <img id="bkgImg">
+
+  <button onclick="window.location.reload();">RESET</button>
+
   <script>
     document.getElementById('searchInput').addEventListener('keypress', function (event) {
+      alert('click');
       if (event.key === 'Enter') {
         const query = this.value.trim();
         if (query) {
@@ -25,19 +45,6 @@
         }
       }
     });
-  </script>
-
-
-  <div id="Card">
-    <h1 id="Strategy">Hello</h1>
-  </div>
-
-  <img id="bkgImg">
-  <img id="Photosbob">
-
-  <button onclick="window.location.reload();">RESET</button>
-
-  <script>
 
     var strategy = document.getElementById("Strategy");
 
@@ -50,7 +57,9 @@
       "Use an old idea",
       "Ask ChatGPT🤷‍♀️",
       "Look from a different POV",
-      "GO FULL ON IN!!!"
+      "GO FULL ON IN!!!",
+      "Inverse the problem",
+      "What am I doing?"
     ];
 
     let total = Strategies.length;
@@ -80,9 +89,61 @@
     theImage.src = mesImages[imagesChoix]
 
 
+
+    let mesID450 = [
+      "src/1450.jpg",
+      "src/2450.jpg",
+      "src/3450.jpg",
+      "src/4450.jpg",
+      "src/5450.jpg",
+      "src/6450.jpg",
+      "src/7450.jpg",
+      "src/8450.jpg",
+      "src/9450.jpg",
+      "src/10450.jpg",
+      "src/11450.jpg",
+      "src/12450.jpg",
+      "src/13450.jpg",
+      "src/14450.jpg",
+      "src/15450.jpg",
+      "src/16450.jpg",
+      "src/17450.jpg",
+      "src/18450.jpg",
+      "src/19450.jpg",
+      "src/20450.jpg",
+      "src/21450.jpg",
+      "src/22450.jpg"
+    ];
+
+    let theID450 = document.getElementById("ID450")
+    let id450Total = mesID450.length;
+    let id450Rando = Math.random();
+    let id450Hasar = id450Rando * id450Total
+    let id450Choix = Math.floor(id450Hasar);
+
+    theID450.src = mesID450[id450Choix]
+
+    let mesBOB = [
+      "src/1bob.jpg",
+      "src/2bob.jpg",
+      "src/3bob.jpg",
+      "src/4bob.jpg",
+      "src/5bob.jpg",
+      "src/6bob.jpg",
+      "src/7bob.jpg",
+      "src/8bob.jpg",
+      "src/9bob.jpg"
+    ];
+
+    let theBOB = document.getElementById("BOB")
+    let bobTotal = mesBOB.length;
+    let bobRando = Math.random();
+    let bobHasar = bobRando * bobTotal
+    let bobChoix = Math.floor(bobHasar);
+
+    theBOB.src = mesBOB[bobChoix]
+
   </script>
-
-
 
 </body>
 
