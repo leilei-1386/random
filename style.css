@@ -24,7 +24,7 @@ body {
 }
 
 #bg-video::-webkit-media-controls {
-  display: none !important;
+    display: none !important;
 }
 
 #title {
@@ -86,6 +86,12 @@ a img:hover {
     transition: 0.3s ease-in-out;
 }
 
+.images-title {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: rgb(0, 0, 0);
+    text-shadow: white;
+}
 
 #Strategy {
     margin: 0;
