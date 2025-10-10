@@ -10,17 +10,21 @@
 
 <body>
 
+  <video autoplay muted loop id="bg-video">
+    <source src="src/background.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
-  <h2>STRATEGIES..?</h2>
+  <h1 id="title">STRATEGIES..?</h1>
 
   <input type="text" id="searchInput" placeholder="search…" autofocus>
 
   <a href="https://www.instagram.com/leilei_x186/">
     <img src="src/instagram.png" alt="Icon" width="35" height="35">
   </a>
-  
+
   <div class="Card">
-    <h1 id="Strategy">Hello</h1>
+    <h1 id="Strategy"></h1>
   </div>
 
   <div class="gallerie">
@@ -77,20 +81,20 @@
     // strategy.innerHTML = "Obey."
     //}
 
-    let mesImages = [
-      "src/scaledandicyblue.jpg",
+    // let mesImages = [
+    "src/scaledandicyblue.jpg",
       "src/scaledandicylightpink.jpg",
       "src/scaledandicypink.jpg",
       "src/scaledandicyyellow.jpg"
-    ];
+    //];
 
-    let theImage = document.getElementById("bkgImg")
-    let imagesTotal = mesImages.length;
-    let imagesRando = Math.random();
-    let imagesHasar = imagesRando * imagesTotal
-    let imagesChoix = Math.floor(imagesHasar);
+    //let theImage = document.getElementById("bkgImg")
+    //et imagesTotal = mesImages.length;
+    //let imagesRando = Math.random();
+    //let imagesHasar = imagesRando * imagesTotal
+    //let imagesChoix = Math.floor(imagesHasar);
 
-    theImage.src = mesImages[imagesChoix]
+    //theImage.src = mesImages[imagesChoix]
 
 
 

@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Quintessential&family=Space+Grotesk:wght@300..700&family=Workbench&display=swap');
 
-
-
 body {
     font-family: "Quintessential", serif;
-    color: rgb(40, 66, 88);
-    background-color: #f59090;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
 
     min-height: 100vh;
     display: flex;
@@ -15,12 +13,27 @@ body {
 }
 
 
-h2 {
-    font-size: 40px;
-    color: rgb(40, 66, 88);
-    text-shadow: 2px 2px 5px rgb(155, 203, 245);
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+#title {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 100px;
+    color: rgb(0, 0, 0);
+    text-shadow: 6px 4px 5px rgb(255, 255, 255);
     margin-bottom: 1rem;
 }
+
 
 a img {
     opacity: 1;
@@ -29,43 +42,47 @@ a img {
     cursor: pointer;
 }
 
+
 a img:hover {
     transform: scale(1.2);
-    /* grows slightly on hover */
-    filter: drop-shadow(0 0 10px #00ccff);
-    /* glowing effect */
+    filter: drop-shadow(0 0 5px rgb(255, 255, 255));
 }
+
 
 .gallerie {
     display: flex;
 }
 
+
 .Card {
     width: 20rem;
     aspect-ratio: 2.5;
     border-radius: 0.5rem;
-    background-color: rgb(155, 203, 245);
-    border: 2px rgb(195, 232, 255) solid;
-    box-shadow: 0.5rem 0.5rem 0.4rem rgb(40, 66, 88);
+    background-color: rgb(0, 0, 0);
+    border: 2px rgb(255, 255, 255) solid;
+    box-shadow: 0rem 0rem 0.8rem rgb(255, 255, 255);
     margin: 10px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+
 .Card img {
     width: 90%;
     margin: 15px;
     border-radius: 5px;
-    border: 2px rgb(195, 232, 255) solid;
+    border: 2px rgb(255, 255, 255) solid;
     transition: 0.3s ease-in-out;
 }
+
 
 .Card img:hover {
     filter: brightness(1.1);
     transform: scale(1.05);
     transition: 0.3s ease-in-out;
 }
+
 
 #Strategy {
     margin: 0;
@@ -77,13 +94,13 @@ a img:hover {
 
 button {
     font-family: "Quintessential", serif;
-    color: rgb(40, 66, 88);
+    color: rgb(255, 255, 255);
     border-radius: 0.5rem;
     padding: 0.5rem;
 
-    background-color: rgb(155, 203, 245);
-    border: 2px solid rgb(195, 232, 255);
-    box-shadow: 0.5rem 0.5rem 0.4rem rgb(40, 66, 88);
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0rem 0rem 0.8rem rgb(255, 255, 255);
     margin-top: 1.5rem;
     opacity: 0.7;
     transition: 0.3s ease-in-out;
@@ -99,13 +116,13 @@ button:hover {
 
 #searchInput {
     font-family: "Quintessential", serif;
-    color: rgb(40, 66, 88);
+    color: rgb(255, 255, 255);
     border-radius: 0.5rem;
     padding: 0.5rem;
 
-    background-color: rgb(155, 203, 245);
-    border: 2px solid rgb(195, 232, 255);
-    box-shadow: 0.5rem 0.5rem 0.4rem rgb(40, 66, 88);
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0rem 0rem 0.8rem rgb(255, 255, 255);
     margin-bottom: 1rem;
     opacity: 0.7;
     transition: 0.3s ease-in-out;
@@ -114,30 +131,19 @@ button:hover {
 
 
 #searchInput:hover {
-    opacity: 1;
+    opacity: 0.9;
     transform: scale(1.05);
     transition: 0.3s ease-in-out;
     padding-right: 12rem;
 }
 
+
 #searchInput:focus {
-    opacity: 1;
+    opacity: 0.9;
     transform: scale(1.05);
     outline: none;
-    border: 2px solid rgb(195, 232, 255);
-    background-color: rgb(171, 207, 239);
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(186, 186, 186);
     padding-right: 12rem;
 
-}
-
-
-#bkgImg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: blur(4px);
 }
