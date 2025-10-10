@@ -10,6 +10,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 
@@ -29,14 +30,12 @@ body {
 
 #title {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 0px;
+    left: 30px;
     font-size: 100px;
     color: rgb(0, 0, 0);
     text-shadow: 6px 4px 5px rgb(255, 255, 255);
-    margin-bottom: 2rem;
     margin: 0;
-    padding: 0;
 }
 
 
