@@ -23,6 +23,9 @@ body {
     z-index: -1;
 }
 
+#bg-video::-webkit-media-controls {
+  display: none !important;
+}
 
 #title {
     position: absolute;

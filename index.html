@@ -10,7 +10,7 @@
 
 <body>
 
-  <video id="bg-video" autoplay muted loop>
+  <video id="bg-video" autoplay muted loop playsinline preload="auto">
     <source src="src/background.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
@@ -47,6 +47,19 @@
   <button onclick="window.location.reload();">RESET</button>
 
   <script>
+
+    const video = document.getElementById("bg-video");
+
+    window.addEventListener("load", () => {
+      const playPromise = video.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          // If Safari blocks autoplay, play after any click
+          document.addEventListener("click", () => video.play());
+        });
+      }
+    });
+
     document.getElementById('searchInput').addEventListener('keypress', function (event) {
       if (event.key === 'Enter') {
         const query = this.value.trim();
