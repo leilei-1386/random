@@ -88,10 +88,12 @@ a img:hover {
 }
 
 .images-title {
+    position: absolute;
+    margin-bottom: 17rem;
+    margin-right: 14rem;
     font-size: 14px;
-    margin-bottom: 5px;
-    color: rgb(0, 0, 0);
-    text-shadow: white;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
 }
 
 #Strategy {
